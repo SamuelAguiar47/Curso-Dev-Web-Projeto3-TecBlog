@@ -26,9 +26,10 @@ body {
 #area-principal {
     width: 920px;
     margin: 0 auto;
+    padding: 15px;
 }
 
-#area-postagens, #area-lateral {
+#area-lateral {
     background: orange;
 }
 
@@ -62,22 +63,49 @@ a {
     text-decoration: none;
 }
 
-a:link, a:visited {
+#area-cabecalho a:link, #area-cabecalho a:visited {
     color: white;
     padding: 8px 12px;
 }
 
-a:hover {
+#area-cabecalho a:hover {
     color: #f7b600;
     background: white;
+    text-decoration: none;
 }
 
 /*
 **** Formatações em geral ****
 */
+
+a:link, a:visited {
+    color: #f7b600;  ;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#area-postagens a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
 h1 {
     color: #4e4e4e;
     font-size: 2.5em;
+}
+
+h2 {
+    color: #f7b600;
+}
+
+.data-postagem {
+    display: block;
+    font-size: 0.8em;
+    border-bottom: 1px solid #CCC;
+    padding: 10px 0px;
+    margin-bottom: 10px;
 }
 
 .branco {
